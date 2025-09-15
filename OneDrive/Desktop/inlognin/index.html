@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inloggning JavaScript-intro</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <p class="hint">Tips för test: namn <code>test</code>, lösenord <code>1234</code></p>
+  <header class="site-header">
+    <nav class="menu">
+      <button id="logoutBtn" class="btn btn-secondary hidden" aria-hidden="true">Logga ut</button>
+    </nav>
+  </header>
+
+  <main id="app" class="container">
+    <section id="loginView" aria-labelledby="loginTitle">
+      <h2 id="loginTitle">Logga in</h2>
+
+      <form id="loginForm" class="card" autocomplete="off" novalidate>
+        <div class="form-row">
+          <label for="name">Namn</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="password">Lösenord</label>
+          <input id="password" name="password" type="password" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Logga in</button>
+      </form>
+    </section>
+    <section id="welcomeView" class="hidden" aria-labelledby="welcomeTitle" aria-hidden="true">
+      <div class="card">
+        <h2 id="welcomeTitle">Välkommen!</h2>
+        <p>Du är inloggad</p>
+        <button id="logoutBtn2" class="btn btn-secondary">Logga ut</button>
+      </div>
+    </section>
+    <section id="errorView" class="hidden" aria-labelledby="errorTitle" aria-hidden="true">
+      <div class="card card-error">
+        <h2 id="errorTitle">Fel vid inloggning</h2>
+        <p>Det blev fel. Försök igen.</p>
+        <button id="backToLoginBtn" class="btn">Tillbaka till inloggning</button>
+      </div>
+    </section>
+    <div id="live" class="visually-hidden" aria-live="polite"></div>
+  </main>
+</body>
+</html>

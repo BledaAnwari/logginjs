@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Städer och länder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Städer och Länder</h1>
+    
+    <div id="main-menu">
+        <h2>Länder</h2>
+        <ul id="countries-list"></ul>
+        <h2>Övrigt</h2>
+        <ul>
+            <li id="visited-link">Städer jag besökt</li>
+        </ul>
+    </div>
+    
+    <div id="cities-view" class="view">
+        <button id="back-to-menu-from-cities" class="back-button">Tillbaka till menyn</button>
+        <h2>Städer i <span id="country-name"></span></h2>
+        <ul id="cities-list"></ul>
+    </div>
+    
+    <div id="city-info-view" class="view">
+        <button id="back-to-cities" class="back-button">Tillbaka till städer</button>
+        <h2 id="city-name"></h2>
+        <p>Invånarantal: <span id="city-population"></span></p>
+        <button id="visited-button">Markera som besökt</button>
+    </div>
+    
+    <div id="visited-view" class="view">
+        <button id="back-to-menu-from-visited" class="back-button">Tillbaka till menyn</button>
+        <h2>Städer jag besökt</h2>
+        <ul id="visited-list"></ul>
+        <p>Totalt antal människor du kan ha mött: <span id="total-population"></span></p>
+        <button id="clear-history">Rensa historik</button>
+    </div>
+    </body>
+    <script src="script.js"></script>
+</html>
+
+       

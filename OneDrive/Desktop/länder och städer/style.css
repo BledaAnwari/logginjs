@@ -1,0 +1,88 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: lightgoldenrodyellow;
+        }
+        #main-menu {
+            margin-bottom: 20px;
+        }
+        #main-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #main-menu li {
+            cursor: pointer;
+            padding: 10px;
+            background-color: lightsalmon;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        #main-menu li:hover {
+            background-color: #ddd;
+        }
+        .view {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .active {
+            display: block;
+        }
+        #cities-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #cities-list li {
+            cursor: pointer;
+            padding: 10px;
+            background-color: lightsalmon;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        #cities-list li:hover {
+            background-color: #ccc;
+        }
+        #city-info button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #city-info button:hover {
+            background-color: #45a049;
+        }
+        #visited button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #visited button:hover {
+            background-color: #da190b;
+        }
+        #back-button {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #back-button:hover {
+            background-color: #0b7dda;
+        }
+        h1{
+            color: rgb(17, 17, 18);
+            font-size: 50px;
+            text-align: center;
+            
+        }
+        h2{
+            color: rgb(20, 19, 19);
+        }
